@@ -1,7 +1,4 @@
-__pycache__/
-*.py[cod]
-.env
-.env.*
-!.env.example
+gallery/
 node_modules/
-dist/
+.env
+.DS_Store

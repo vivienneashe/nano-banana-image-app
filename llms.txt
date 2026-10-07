@@ -1,8 +1,0 @@
-# Nano Banana Pro — Argolink
-
-- Model: nano-banana-pro
-- Intent: image application request flow
-- Model page: https://argolink.io/gh-nano-banana-image-app
-- API docs: https://argolink.io/gh-unified-api-docs
-- Examples: examples/request.sh, examples/client.py
-- Contract: docs/model-contract.md

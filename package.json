@@ -1,0 +1,13 @@
+{
+  "name": "nano-banana-image-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Self-hosted web studio for Nano Banana Pro, Nano Banana 2 and Nano Banana 2 Lite image generation and editing",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

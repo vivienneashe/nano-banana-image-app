@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nano Banana Studio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Nano Banana Studio</h1>
+    <p id="spend">Spent so far: $0.00</p>
+  </header>
+
+  <main>
+    <form id="form">
+      <label>Prompt
+        <textarea id="prompt" rows="5" required placeholder="A green glass bottle on wet black stone, studio rim light"></textarea>
+      </label>
+
+      <div class="row">
+        <label>Model <select id="model"></select></label>
+        <label>Aspect ratio <select id="ratio"></select></label>
+        <label>Resolution <select id="resolution"></select></label>
+        <label>Images <select id="n"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+      </div>
+      <p id="model-note" class="muted"></p>
+
+      <div id="drop" class="drop" tabindex="0">
+        <p>Drop up to 14 reference images here, or <label class="link">browse<input id="files" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden></label>.
+        With references the request is an edit; say in the prompt what to keep and what to change.</p>
+        <div id="refs" class="refs"></div>
+      </div>
+
+      <div class="actions">
+        <button id="go" type="submit">Generate</button>
+        <span id="estimate" class="muted"></span>
+        <span id="status" role="status"></span>
+      </div>
+    </form>
+
+    <section>
+      <h2>Gallery</h2>
+      <div id="gallery" class="gallery"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
